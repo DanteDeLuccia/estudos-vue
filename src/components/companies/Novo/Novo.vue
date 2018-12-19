@@ -31,8 +31,11 @@
                 nome: this.nome,
                 email: this.email,
                 site: this.site,
-
-            })
+            }
+            ).then(res => {
+                this.$router.push('/companies/')
+            }
+            )
         }
       }
     }
