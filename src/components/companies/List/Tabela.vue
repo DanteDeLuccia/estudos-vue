@@ -17,7 +17,7 @@
                 <td>{{ (empresa.site) ? empresa.site : "Nenhum site" }}</td>
                 <td>
                     <router-link class="btn btn-sm btn-primary" :to="{name: 'singleCompany', params: {companyId: empresa.id}}">Ver mais</router-link>
-                    <router-link class="btn btn-sm btn-warning text-white" to=":id">Editar</router-link>
+                    <router-link class="btn btn-sm btn-warning text-white" :to="{name: 'editCompany', params: {companyId: empresa.id}}">Editar</router-link>
                 </td>
             </tr>
         </tbody>
